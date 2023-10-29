@@ -1,0 +1,149 @@
+body {
+    font-size: 20px;
+    font-family: 'Noto Sans HK', sans-serif;
+    padding-bottom: 50px;
+    color: #707070;
+}
+
+.container {
+    padding-top: 60px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 4px;
+}
+
+.title_bar {
+    background: linear-gradient(111deg,#ee9560,#f5d388, #f3976f);
+    background-size: 180% 180%;
+    animation: gradient-animation 6s ease infinite;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.about_me_container {
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.title_font {
+    margin-top: 25px;
+    color: #D56939;
+    margin-bottom: 0;
+}
+
+.my_name {
+    color: #D56939;
+    font-size: 2.7em;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.about_me_msg {
+    margin-top: 20px;
+    line-height: 1.7;
+}
+
+.skills_container, .interests_container, .project_container {
+    margin-top: 60px;
+}
+
+.title_font+hr {
+    color: #D56939;
+}
+
+.skill_record {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 10px;
+}
+
+.skill_record img {
+    height: 25px;
+    width: auto ;
+}
+
+.project_box {
+    padding: 20PX 30PX;
+}
+
+.project_img {
+    margin-top: 10px;
+    padding-top: 75%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: #d7cdc6 5px solid;
+    outline: 3px #d7cdc6 solid;
+    outline-offset: 7px;
+    transition: 0.5s ease-in-out;
+}
+.project_img:hover {
+    background-size: auto 110%;
+    outline: 2px #eba271 solid;
+    border: #eba271 5px solid;
+}
+
+
+.project_title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.swiper {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 2em;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 5px black ;
+    background-position: center;
+    background-size: auto 110%;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 20%;
+    transition: 0.3s;
+    background-color: #b3988a59;
+    background-blend-mode: hard-light
+}
+
+.swiper-slide:hover {
+    background-size: auto 120%;
+    outline: solid 3px #eba271;
+    outline-offset: -15px;
+    color: #eba271;
+    text-shadow: 2px 2px 0 #4b2b14;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
